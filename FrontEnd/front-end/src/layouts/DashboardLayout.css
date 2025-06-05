@@ -1,0 +1,33 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #2c3444;
+  position: relative;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 250px;
+  min-height: 100vh;
+  width: calc(100vw - 250px);
+  overflow: auto;
+  position: relative;
+}
+
+.content-wrapper {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    margin-left: 0;
+    width: 100vw;
+  }
+  
+  .main-content.sidebar-open {
+    margin-left: 250px;
+    width: calc(100vw - 250px);
+  }
+}
