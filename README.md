@@ -2,6 +2,7 @@
 
 Esta é uma API desenvolvida com Node.js que integra com a aplicação front-end disponível no repositório:
 🔗 https://github.com/willyanpaproski/API_GESTAO_PRODUTOS_FRONT_END
+
 ✅ Requisitos
 
 Antes de iniciar o projeto, certifique-se de que os seguintes itens estão instalados:
