@@ -18,6 +18,7 @@ Antes de iniciar o projeto, certifique-se de que os seguintes itens estão insta
     Clone o repositório (se ainda não o fez):
 
 git clone https://github.com/willyanpaproski/API_GESTAO_PRODUTOS_BACK_END.git
+
 cd API_GESTAO_PRODUTOS_BACK_END
 
 Crie o arquivo .env na raiz do projeto, com base no .env.example, preenchendo as seguintes variáveis:
