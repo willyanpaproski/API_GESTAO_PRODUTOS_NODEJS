@@ -43,4 +43,4 @@ Inicie a API:
 
     Após iniciar a API, ela estará disponível na URL http://localhost:<PORT> (substitua <PORT> pela porta configurada no .env).
 
-    A API se integra com o front-end mencionado acima, que também precisa estar em execução para a aplicação completa funcionar.
+    A API se integra com o front-end mencionado acima.
