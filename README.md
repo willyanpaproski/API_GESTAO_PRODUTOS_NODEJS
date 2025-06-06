@@ -44,3 +44,36 @@ Inicie a API:
     Após iniciar a API, ela estará disponível na URL http://localhost:<PORT> (substitua <PORT> pela porta configurada no .env).
 
     A API se integra com o front-end mencionado acima.
+
+Rotas da API:
+
+Usuários:
+
+    GET -> /api/usuario -> Consulta todos os usuários cadastrados
+    GET -> /api/usuario/:id -> Consulta um usuário por meio do seu ID
+    POST -> /api/usuario -> Cadastra um usuário (Não precisa de token)
+    PUT -> /api/usuario/:id -> Busca um usuário pelo seu ID e atualiza seus dados
+    DELETE -> /api/usuario/:id -> Busca um usuário pelo seu ID e o deleta do banco de dados
+
+Categorias:
+
+    GET -> /api/categoria -> Consulta todas as categorias cadastradas
+    GET -> /api/categoria/quantidadeProdutos -> Consulta todas as categorias com a quantidade de produtos vinculados a cada uma
+    GET -> /api/categoria/:id -> Consulta uma categoria pelo seu ID
+    POST -> /api/categoria -> Cadastra uma categoria
+    PUT -> /api/categoria/:id -> Busca uma categoria pelo seu ID e atualiza seus dados
+    DELETE -> /api/categoria/:id -> Busca uma categoria pelo seu ID e a delete do banco de dados
+
+Produtos:
+
+    GET -> /api/produto -> Consulta todos os produtos cadastrados
+    GET -> /api/produto/maiorQuantidade -> Consulta os 10 produtos com maior quantidade
+    GET -> /api/produto/:categoriaId -> Consulta um produto por meio do ID da categoria a qual está vinculado
+    GET -> /api/produto/:id -> Consulta um produto por meio do seu ID
+    POST -> /api/produto -> Cadastra um produto
+    PUT -> /api/produto/:id -> Busca um produto pelo ID e atualiza seus dados
+    DELETE -> /api/produtos/:id -> Busca um produto pelo ID e o deleta do banco de dados
+
+Autenticação:
+    
+    POST -> /api/auth/login -> Recebe as credenciais de um usuário para realizar login. Caso o login for bem sucedido, é retornado o token para utilizar para as demais rotas
