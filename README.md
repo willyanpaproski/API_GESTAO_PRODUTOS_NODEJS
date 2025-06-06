@@ -1,9 +1,44 @@
-# Esta é uma API nodejs que integra com a aplicação front-end encontrada no link https://github.com/willyanpaproski/API_GESTAO_PRODUTOS_FRONT_END
+📦 API de Gestão de Produtos – Backend
 
-Abaixo, seguem os passos e requisitos para rodar a aplicação:
+Esta é uma API desenvolvida com Node.js que integra com a aplicação front-end disponível no repositório:
+🔗 https://github.com/willyanpaproski/API_GESTAO_PRODUTOS_FRONT_END
+✅ Requisitos
 
-1. Primeiro, é necessário ter o mongodb instalado na máquina onde a aplicação irá rodar, ou utilizar o mongodb atlas.
+Antes de iniciar o projeto, certifique-se de que os seguintes itens estão instalados:
 
-3. Crie o arquivo com o nome ".env" e preencha as variáveis de acordo com o arquivo ".env.example". As variáveis necessárias para a api, é a porta onde a api irá rodar, a url de conexão com o banco de dados mongodb, uma senha segura para tokens jwt, e um número para o "salt_rounds", que é utilizado pela api para criptografar senhas.
+    Node.js (versão 18 ou superior)
 
-4. Após criado o arquivo ".env", rode o comando "node server.js" na raíz do projeto. Logo que a aplicação inicia, ela tenta realizar conexão com o banco de dados, e trará no console se a conexão foi realizada com sucesso
+    npm (gerenciador de pacotes do Node.js)
+
+    MongoDB (local ou via MongoDB Atlas)
+
+🚀 Como rodar o projeto
+
+    Clone o repositório (se ainda não o fez):
+
+git clone https://github.com/willyanpaproski/API_GESTAO_PRODUTOS_BACK_END.git
+cd API_GESTAO_PRODUTOS_BACK_END
+
+Crie o arquivo .env na raiz do projeto, com base no .env.example, preenchendo as seguintes variáveis:
+
+    PORT: Porta onde a API será executada
+
+    MONGO_URI: URL de conexão com o MongoDB
+
+    JWT_SECRET: Uma chave secreta segura para geração dos tokens JWT
+
+    SALT_ROUNDS: Número de "rounds" para criptografia de senhas com bcrypt
+
+Instale as dependências:
+
+npm install
+
+Inicie a API:
+
+    node server.js
+
+💡 Observações
+
+    Após iniciar a API, ela estará disponível na URL http://localhost:<PORT> (substitua <PORT> pela porta configurada no .env).
+
+    A API se integra com o front-end mencionado acima, que também precisa estar em execução para a aplicação completa funcionar.
